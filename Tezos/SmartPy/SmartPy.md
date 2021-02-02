@@ -52,6 +52,8 @@ class Name(sp.Contract):
 
 ### Initialization of the contract storage
 
+^1ebe27
+
 ```python
 def __init__(self):
 	self.init(<name> = "<value>")
@@ -68,7 +70,7 @@ def __init__(self):
 ​```
 ```
 1. Init a testing environment:
-
+python
 ```python
 @sp.add_test(name=<name>)
 def test():
@@ -96,9 +98,13 @@ def test():
 
 ### Entrypoints
 
+^78f607
+
 Add an entrypoint:
 
 ```python
 
 ```
 
+
+#SmartPy  #Tezos #Code #Python
