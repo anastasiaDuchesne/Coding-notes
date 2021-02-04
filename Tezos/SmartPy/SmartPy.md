@@ -52,8 +52,6 @@ class Name(sp.Contract):
 
 ### Initialization of the contract storage
 
-^1ebe27
-
 ```python
 def __init__(self):
 	self.init(<name> = "<value>")
@@ -70,7 +68,7 @@ def __init__(self):
 ​```
 ```
 1. Init a testing environment:
-python
+
 ```python
 @sp.add_test(name=<name>)
 def test():
@@ -92,19 +90,50 @@ def test():
 @sp.add_test(name=<name>)
 def test():
     scenario = sp.test_scenario()
-    <contract_var_name> = <Contract_Class_Name>
-    scenario += <contract_var_name>
+    <test_contract_var_name> = <Contract_Class_Name>
+    scenario += <test_contract_var_name>
 ```
 
 ### Entrypoints
 
-^78f607
-
 Add an entrypoint:
 
 ```python
-
+@sp.entry_point
+def <entrypoint_function_name>(self, <param_name>):
+    self.data.<state_variable> = <param_name>
 ```
 
+Everytime you need to access anything from the contract storage, you need to use `self.data` 
 
-#SmartPy  #Tezos #Code #Python
+Testing an entrypoint:
+
+```python
+scenario += <contract_var_name>.<entrypoint_function_name>(<new_param>)
+```
+
+### Explicitly assign types
+
+```python
+# string
+sp.string("...")
+
+#boolean
+sp.bool("true")
+sp.bool("false")
+
+#negative integers
+sp.int(...)
+#non-negative integers
+sp.nat(...)
+
+#maps
+sp.map({...})
+```
+
+### Verify condition in tests
+
+```python
+scenario.verify(<condition>)
+```
+
