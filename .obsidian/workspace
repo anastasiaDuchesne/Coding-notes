@@ -6,14 +6,28 @@
       {
         "id": "2c9cd66bce82ca66",
         "type": "leaf",
+        "dimension": 80.10752688172043,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
             "file": "JavaScript/VueJS/OpenClassRoom_notes.md",
-            "mode": "source"
+            "mode": "preview"
           }
-        }
+        },
+        "group": "f0c8b04bf684ee36"
+      },
+      {
+        "id": "89f34b4766fb3926",
+        "type": "leaf",
+        "dimension": 19.892473118279568,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "JavaScript/VueJS/OpenClassRoom_notes.md"
+          }
+        },
+        "group": "f0c8b04bf684ee36"
       }
     ],
     "direction": "vertical"
@@ -77,8 +91,19 @@
                 "unlinkedCollapsed": false
               }
             }
+          },
+          {
+            "id": "843ee782e41f0a6b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "JavaScript/VueJS/OpenClassRoom_notes.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
