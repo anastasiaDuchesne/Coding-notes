@@ -140,8 +140,8 @@ scenario.verify(<condition>)
 ### Maps
 ```python
 map_name = {
-                    "key1": value1, 
-                    "key2": value2
+	"key1": value1, 
+ 	"key2": value2
 }
 
 map_name = sp.map({...})
